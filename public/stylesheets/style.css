@@ -35,8 +35,12 @@ body {
   border-radius: 6px;
 }
 
-.scorllable {
+.chat-area {
+  position: absolute;
   overflow-y: scroll;
+  top: 10px;
+  bottom: 200px;
+  width: 100%;
 }
 
 .textarea-non-resizable {
