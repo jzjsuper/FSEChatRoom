@@ -52,3 +52,7 @@ body {
   margin-top: 20px;
 
 }
+
+.ghost {
+  display: none;
+}
