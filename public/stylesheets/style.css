@@ -56,3 +56,7 @@ body {
 .ghost {
   display: none;
 }
+
+.message-area {
+  white-space: pre-line;
+}
