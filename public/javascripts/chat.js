@@ -19,4 +19,6 @@ $( document ).ready(function() {
     }
     message_type_area.val("");
   });
+
+  var socket = io();
 });
