@@ -1,35 +1,11 @@
 extends layout
 
+block style
+  link(rel="stylesheet", href="stylesheets/login.css")
+
+
 block content
-  .container
-    h1 Welcome to FSE Chat Room
-
-  .container.pre-scrollable
-    .bg-info.chat-block
-      .row
-        .col-xs-6
-          p.lead.text-left
-            strong Jacob
-        .col-xs-6
-          p.text-right 08-04-2014
-      .row
-        .col-xs-12
-          p Vestibulum adipiscing turpis vitae ullamcorper iaculis sociis turpis parturient a porta eget turpis suspendisse eleifend sed donec suspendisse adipiscing sapien at eu consectetur mattis eu. A a sociosqu orci dis rhoncus libero libero nascetur parturient a vel non morbi sodales porta a. Sem orci id eu ut scelerisque mi vestibulum hac nec cursus placerat habitasse a ad a suspendisse nunc vehicula consequat dignissim ut tellus semper phasellus a auctor. Dignissim odio vestibulum ligula tincidunt mi ut ac elit mus class semper netus faucibus condimentum suspendisse quis curabitur diam mi volutpat proin adipiscing. Habitasse vitae curabitur posuere fermentum pulvinar vestibulum neque purus lacus a viverra ut a vestibulum imperdiet morbi in mi lacinia scelerisque et nisl etiam netus senectus vestibulum enim a. Aliquet magnis a eros vitae eu at facilisi sem et quis netus pharetra cubilia suspendisse.
-
-    .bg-info.chat-block
-      .row
-        .col-xs-6
-          p.lead.text-left
-            strong Jacob
-        .col-xs-6
-          p.text-right 08-04-2014
-      .row
-        .col-xs-12
-          p Vestibulum adipiscing turpis vitae ullamcorper iaculis sociis turpis parturient a porta eget turpis suspendisse eleifend sed donec suspendisse adipiscing sapien at eu consectetur mattis eu. A a sociosqu orci dis rhoncus libero libero nascetur parturient a vel non morbi sodales porta a. Sem orci id eu ut scelerisque mi vestibulum hac nec cursus placerat habitasse a ad a suspendisse nunc vehicula consequat dignissim ut tellus semper phasellus a auctor. Dignissim odio vestibulum ligula tincidunt mi ut ac elit mus class semper netus faucibus condimentum suspendisse quis curabitur diam mi volutpat proin adipiscing. Habitasse vitae curabitur posuere fermentum pulvinar vestibulum neque purus lacus a viverra ut a vestibulum imperdiet morbi in mi lacinia scelerisque et nisl etiam netus senectus vestibulum enim a. Aliquet magnis a eros vitae eu at facilisi sem et quis netus pharetra cubilia suspendisse.
-
-  footer.footer
-    .container
-        form
-          .form-group
-            textarea.form-control.textarea-non-resizable(rows="3", placeholder="Your message here...")
-          button.btn.btn-primary.btn-block(type="button") Post
+  form.form-signin(action="/chat", method="get")
+    h2 Please enter your name
+    input.form-control.form-field(type="text", placeholder="name", name="name")
+    button.btn.btn-lg.btn-primary.btn-block(type="submit") Join FSE Chat Room
