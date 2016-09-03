@@ -9,7 +9,7 @@ module.exports = function(io) {
 
   /* GET chat room page. */
   router.get('/', function(req, res, next) {
-    res.render('chat', { title: 'FSE Chat Room' , name: req.query.name});
+    res.render('chat', { title: 'FSE Chat Room - ' + req.query.name , name: req.query.name});
   });
 
   io.on('connection', function(socket){
